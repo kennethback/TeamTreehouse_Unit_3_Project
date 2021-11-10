@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamTreehouse Project 3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="page-title">
+        <h1>THE CODE REVIEW</h1>
+    </div>
+
+        <header>
+            <h2>Sign up for our newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
+        </header>
+
+    <form>
+
+        <fieldset class="fs1">
+
+            <legend>Contact Information</legend>
+
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name" placeholder="Required">
+                <br> <br>
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="Required">
+                <br> <br>
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone">
+                <br> <br>
+            <label for="address">Street Address</label>
+            <input type="text" name="address" id="address">
+                <br> <br>
+            <label for="city">City City</label>
+            <input type="text" name="city" id="city">
+                <br> <br> <br>
+            <select name="state" id="state">
+                <option value="state">State</option>
+                <option value="california">California</option>
+                <option value="oregon">Oregon</option>
+                <option value="florida">Florida</option>
+            </select>
+                <br> <br> <br>
+            <label for="zip">Zip Code</label>
+            <input type="text" name="zip" id="zip">
+
+        </fieldset>
+
+        <fieldset class="fs2">
+
+            <legend>Newsletter</legend>
+
+            <p>Select the newsletters you would like to receive</p>
+
+            <input type="checkbox" name="newsletter" id="checkbox-html" value="html">
+            <label for="html">HTML News</label>
+          
+            <input type="checkbox" name="newsletter" id="css" value="css">
+            <label for="css">CSS News</label>
+         
+            <input type="checkbox" name="newsletter" id="js" value="js">
+            <label for="js">JavaScript News</label>
+
+            <br> <br> <br>
+
+            <p>Newsletter Format</p>
+
+            <input type="radio" name="format" id="radio-html" value="html">
+            <label for="radio-html">HTML</label>
+
+            <input type="radio" name="format" id="plain-text" value="plain-text">
+            <label for="plain-text">Plain Text</label>
+
+            <br> <br> <br>
+
+            <p>Other topics you'd like to hear about</p>
+
+            <textarea name="other" id="other" cols="30" rows="10"></textarea>
+
+            <button type="submit">Sign Up</button>
+
+        </fieldset>
+
+    </form>
+
+<footer>
+    <p>Copyright The Code Review</p>
+</footer>
+    
+</body>
+</html>
