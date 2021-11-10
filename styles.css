@@ -9,7 +9,7 @@ body {
     padding: 0;
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
-    background-color: #eaeaea;
+    background-color: snow;
     color: #333333;
 }
 
@@ -28,7 +28,7 @@ a {
 /* Mobile Styles ---------------------------------------------------------------------------- */
 
 .page-title {
-    background-color: rgb(26, 26, 49);
+    background-color: rgb(39, 39, 82);
     margin: 0 auto;
     width: 100%;
     padding: 1px;
@@ -43,44 +43,116 @@ a {
 header {
     border-bottom: double 10px black;
     margin: 50px auto;
-    width: 55%;
+    padding-bottom: 40px;
+    width: 90%;
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
+    background-color: tomato;
+    padding: 15px;
+    border-radius: 7px;
 }
 
 header p {
     text-align: center;
+    color: lightgrey;
 }
+
+
+/* ------------------------------------------------------------------------------ */
 
 
 form {
-    width: 75%;
-    margin: 100px auto;
+    width: 90%;
+    margin: 50px auto 0px;
+    background-color: skyblue;
+    padding: 15px;
+    border-radius: 7px;
 }
 
 .fs1 {
-    padding: 20px 20px 100px 20px;
-    margin: 75px auto;
     border: hidden;
     border-bottom: solid black 5px;
 }
 
+label {
+    font-size: 1.2rem;
+}
+
+input[type=text]:focus {
+    background-color: rgb(109, 204, 109);
+}
+
+input[type=email]:focus {
+    background-color: rgb(109, 204, 109);
+}
+
+input[type=tel]:focus {
+    background-color: rgb(109, 204, 109);
+}
+
 .fs2 {
-    padding: 20px;
-    margin: 75px auto;
+    margin-top: 75px;
     border: hidden;
 }
 
+.fs2 div {
+    width: auto;
+    margin-top: 15px;
+}
+
+input[type=text], input[type=email], input[type=tel], select {
+    background-color: rgb(233, 229, 229);
+    color: black;
+    border-radius: 5px;
+    border: none;
+    margin-top: 15px;
+    padding: 22px;
+    width: 100%;
+    font-size: 1.05rem;
+}
+
+.zip {
+    width: 50%;
+    margin-bottom: 22px;
+}
+
+legend {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+#name::placeholder {
+    text-align: right;
+}
+
+#email::placeholder {
+    text-align: right;
+}
+
+textarea {
+    background-color: rgb(233, 229, 229);
+    width: 95%;
+}
+
+textarea:focus {
+    background-color: rgb(109, 204, 109);
+}
+
+
 button {
-    background-color: teal;
+    background-color: rgb(51, 189, 189);
     color: snow;
     font-size: 1.75rem;
-    padding: 10px 200px;
-    border-radius: 15px;
+    padding: 10px 100px;
+    border-radius: 10px;
+    margin: 15px auto;
+    width: 95%;
+    border: hidden;
 }
 
 footer {
@@ -91,6 +163,7 @@ footer {
 
 footer p {
     text-align: center;
+    color: lightgrey;
 }
 
 
@@ -99,8 +172,32 @@ footer p {
 
 @media (min-width: 768px) {
     
+header {
+    width: 45%;
+}
+
 form {
     width: 45%;
 }
+
+input[type=text], input[type=email], input[type=tel], select {
+    width: 75%;
+}
+
+.fs1 div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.zip {
+    width: 50%;
+}
+
+.zip input[type=text] {
+    width: 50%;
+}
+
+
 
 }

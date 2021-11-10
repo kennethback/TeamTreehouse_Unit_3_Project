@@ -15,7 +15,7 @@
     </div>
 
         <header>
-            <h2>Sign up for our newsletter</h2>
+            <h2 class="header">Sign up for our newsletter</h2>
             <p>Get the latest news on how your code is doing right in your inbox</p>
         </header>
 
@@ -23,32 +23,47 @@
 
         <fieldset class="fs1">
 
-            <legend>Contact Information</legend>
+         <legend>Contact Information</legend>
 
+          <div>
             <label for="name">Full Name</label>
-            <input type="text" name="name" id="name" placeholder="Required">
-                <br> <br>
+            <input type="text" name="name" id="name" placeholder="Required" required>
+          </div>
+                    <br> <br>
+          <div>   
             <label for="email">Email Address</label>
-            <input type="email" name="email" id="email" placeholder="Required">
-                <br> <br>
+            <input type="email" name="email" id="email"  placeholder="Required" required>
+          </div>    
+                    <br> <br>
+          <div>
             <label for="phone">Phone Number</label>
-            <input type="tel" name="phone" id="phone">
-                <br> <br>
+            <input type="tel" name="phone" id="phone" placeholder="ex. (012-345-6789)">
+          </div>    
+                    <br> <br>
+          <div>
             <label for="address">Street Address</label>
-            <input type="text" name="address" id="address">
-                <br> <br>
-            <label for="city">City City</label>
-            <input type="text" name="city" id="city">
-                <br> <br> <br>
+            <input type="text" name="address" id="address" placeholder="ex. 1234 Street Road ">
+          </div>   
+                    <br> <br>
+          <div>
+            <label for="city">City</label>
+            <input type="text" name="city" id="city" placeholder="Enter City">
+          </div>  
+                    <br> <br> <br>
+          <div>
+            <label for="state">State</label>
             <select name="state" id="state">
-                <option value="state">State</option>
-                <option value="california">California</option>
-                <option value="oregon">Oregon</option>
-                <option value="florida">Florida</option>
+            <option value="state">Choose State</option>
+            <option value="california">California</option>
+            <option value="oregon">Oregon</option>
+            <option value="florida">Florida</option>
             </select>
-                <br> <br> <br>
+          </div>
+                    <br> <br> <br>
+          <div class="zip">
             <label for="zip">Zip Code</label>
-            <input type="text" name="zip" id="zip">
+            <input type="text" name="zip" id="zip" placeholder="Enter Zip Code">
+          </div>
 
         </fieldset>
 
@@ -58,30 +73,37 @@
 
             <p>Select the newsletters you would like to receive</p>
 
-            <input type="checkbox" name="newsletter" id="checkbox-html" value="html">
-            <label for="html">HTML News</label>
-          
-            <input type="checkbox" name="newsletter" id="css" value="css">
-            <label for="css">CSS News</label>
-         
-            <input type="checkbox" name="newsletter" id="js" value="js">
-            <label for="js">JavaScript News</label>
-
-            <br> <br> <br>
+            <div>
+                <input type="checkbox" name="newsletter" id="checkbox-html" value="html">
+                <label for="html">HTML News</label>
+            </div>
+        
+            <div>
+                <input type="checkbox" name="newsletter" id="css" value="css">
+                <label for="css">CSS News</label>
+            </div> 
+        
+            <div>
+                <input type="checkbox" name="newsletter" id="js" value="js">
+                <label for="js">JavaScript News</label>
+            </div> 
+                  <br> <br> <br>
 
             <p>Newsletter Format</p>
 
-            <input type="radio" name="format" id="radio-html" value="html">
-            <label for="radio-html">HTML</label>
-
-            <input type="radio" name="format" id="plain-text" value="plain-text">
-            <label for="plain-text">Plain Text</label>
-
-            <br> <br> <br>
-
+            <div>
+                <input type="radio" name="format" id="radio-html" value="html">
+                <label for="radio-html">HTML</label>
+            </div>
+        
+            <div>
+                <input type="radio" name="format" id="plain-text" value="plain-text">
+                <label for="plain-text">Plain Text</label>
+            </div>   
+                  <br> <br> <br>
             <p>Other topics you'd like to hear about</p>
 
-            <textarea name="other" id="other" cols="30" rows="10"></textarea>
+            <textarea name="other" id="other" cols="41" rows="10" placeholder="Enter Message"></textarea>
 
             <button type="submit">Sign Up</button>
 
