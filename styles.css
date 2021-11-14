@@ -109,6 +109,8 @@ input[type=text], input[type=email], input[type=tel], select {
     padding: 22px;
     width: 100%;
     font-size: 1.05rem;
+    transition-property: background-color;
+    transition-duration: 1.5s;
 }
 
 .zip {
@@ -132,6 +134,8 @@ legend {
 
 textarea {
     background-color: rgb(233, 229, 229);
+    transition-property: background-color;
+    transition-duration: 1.5s;
     width: 95%;
 }
 
@@ -192,9 +196,5 @@ input[type=text], input[type=email], input[type=tel], select {
 .zip input[type=text] {
     width: 50%;
 }
-
-
-
-
 
 }
